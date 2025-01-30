@@ -12,6 +12,6 @@ interface props {
 
 export default function Botao({titulo, cor}:props){
     return(
-        <button className={`p-2 text-#FFFFFF ${playfair_display.className} w-[100%] rounded-3xl ${cor}`}>{titulo}</button>
+        <button className={`p-2 text-white ${playfair_display.className} w-[100%] rounded-3xl ${cor}`}>{titulo}</button>
     );
 }
