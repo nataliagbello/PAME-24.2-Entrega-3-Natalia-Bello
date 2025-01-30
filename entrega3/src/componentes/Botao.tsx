@@ -1,3 +1,10 @@
+import { Playfair_Display } from '@next/font/google'
+
+const playfair_display = Playfair_Display({
+  subsets: ["latin"],
+  weight: '700'
+});
+
 interface props {
     titulo: string;
     cor: string;
@@ -5,6 +12,6 @@ interface props {
 
 export default function Botao({titulo, cor}:props){
     return(
-        <button className={`p-2 w-[100%] border-2 rounded-lg border-purple-600 ${cor}`}>{titulo}</button>
+        <button className={`p-2 text-#FFFFFF ${playfair_display.className} w-[100%] rounded-3xl ${cor}`}>{titulo}</button>
     );
 }
