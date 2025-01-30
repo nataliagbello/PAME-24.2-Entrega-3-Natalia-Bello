@@ -1,6 +1,21 @@
 import FormInput from "@/components/FormInput"
-//import Botao from "@/components/Botao"
+import Botao from "@/components/Botao"
 import Image from 'next/image';
+import { Playfair_Display } from 'next/font/google';
+import { Chewy } from 'next/font/google'
+
+//Declaração das constantes importadas
+
+const playfair_display = Playfair_Display({
+  subsets: ["latin"],
+  weight: '700'
+});
+
+const chewy = Chewy({
+  subsets: ["latin"],
+  weight: '400'
+});
+
 
 export default function Inicio() {
   return (
@@ -28,8 +43,11 @@ export default function Inicio() {
 
           {/*FOTO FUNDO*/}
           <div className="border-2 border-black flex flex-col items-end justify-end h-[100%] w-[85%]">
-            <div className="border-2 border-black w-[50%] h-[50%] flex flex-col justify-start items-start">
-              <p>OIE</p>
+            <div className="border-2 border-black gap-8 bg-green-500 w-[50%] h-[50%] flex flex-col justify-center items-center">
+              <p className={`border-2 border-black text-center text-white ${chewy.className} font-black text-5xl w-[70%] h-[40%] p-3`}>LUGAR DE DIVERSÃO E SEGURANÇA</p>
+              <div className="border-2 border-white w-[40%] h-[60%] items-start justify-center">
+                <Botao titulo="SAIBA MAIS" cor="bg-[#FFA845]"></Botao>
+              </div>
             </div>
           </div>
 

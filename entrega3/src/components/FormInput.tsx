@@ -3,10 +3,10 @@ interface props{
     placeholder: string;
     tipo?: string;
     cor: string;
-    width?: string;
+    style?: string;
 }
 
-export default function FormInput({label, placeholder, tipo, cor, width}:props){
+export default function FormInput({label, placeholder, tipo, cor, style}:props){
     return (
         <div>
             <div>
@@ -14,7 +14,7 @@ export default function FormInput({label, placeholder, tipo, cor, width}:props){
             </div>
             
             <div>
-                <input type={tipo} className={`w-[100%] font-serif text-sm p-2 rounded-3xl`} placeholder={placeholder}/>
+                <input type={tipo} className={`w-[100%] font-serif style={style} text-sm p-2 rounded-3xl`} placeholder={placeholder}/>
             </div>
 
         </div>
