@@ -3,9 +3,10 @@ interface props{
     placeholder: string;
     tipo?: string;
     cor: string;
+    width?: string;
 }
 
-export default function FormInput({label, placeholder, tipo, cor}:props){
+export default function FormInput({label, placeholder, tipo, cor, width}:props){
     return (
         <div>
             <div>

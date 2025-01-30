@@ -3,7 +3,7 @@ import Botao from "@/components/Botao";
 import Link from "next/link";
 import { Playfair_Display } from 'next/font/google';
 import Image from 'next/image';
-import Olho from "@/components/Olho";
+
 
 
 
@@ -34,7 +34,7 @@ export default function Login(){
           <div className="hidden lg:flex bg-[#2968B2] p-5 w-[40%] h-[90%] rounded-3xl items-center justify-center">
             <div className= "bg-[#6593c7] border-2 border-black w-[88%] h-[88%] rounded-3xl flex flex-col justify-center ">
               <h1 className={`border-2 border-black text-center text-[#FDBE77] ${playfair_display.className} font-black text-3xl h-[20%] p-3`}>Seja bem-vindo ao</h1>
-              <div className="border-2 border-green-900 flex flex-col justify-center items-center">
+              <div className="border-2 border-green-900  flex flex-col justify-center items-center">
                 <Image src='/logotipo.jpg' width={350} height={350} alt={"LOGO DO HOTEL"} ></Image> {/*Inserir logo Hotel*/}
               </div>
             

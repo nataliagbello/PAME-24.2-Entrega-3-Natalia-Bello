@@ -1,4 +1,4 @@
-export default function Inicio() {
+export default function Servico() {
     return (
      <div>
      </div>

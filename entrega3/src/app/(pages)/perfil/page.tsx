@@ -1,4 +1,4 @@
-export default function Inicio() {
+export default function Perfil() {
     return (
      <div>
      </div>
