@@ -6,7 +6,7 @@ interface props{
     style?: string;
 }
 
-export default function FormInput({label, placeholder, tipo, cor, style}:props){
+export default function FormInput({label, placeholder, tipo, cor, style="w-[100%]"}:props){
     return (
         <div>
             <div>
@@ -14,7 +14,7 @@ export default function FormInput({label, placeholder, tipo, cor, style}:props){
             </div>
             
             <div>
-                <input type={tipo} className={`w-[100%] font-serif style={style} text-sm p-2 rounded-3xl`} placeholder={placeholder}/>
+                <input type={tipo} className={`font-serif ${style} text-sm p-2 rounded-3xl`} placeholder={placeholder}/>
             </div>
 
         </div>

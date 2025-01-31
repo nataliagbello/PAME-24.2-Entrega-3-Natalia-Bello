@@ -8,10 +8,12 @@ const playfair_display = Playfair_Display({
 interface props {
     titulo: string;
     cor: string;
+    style?:string;
+    href?: string
 }
 
-export default function Botao({titulo, cor}:props){
+export default function Botao({style, titulo, cor, href}:props){
     return(
-        <button className={`p-2 text-white ${playfair_display.className} w-[100%] rounded-3xl ${cor}`}>{titulo}</button>
+        <button className={`p-2 text-white ${playfair_display.className} ${href} w-[100%] ${style} rounded-3xl ${cor}`}>{titulo}</button>
     );
 }

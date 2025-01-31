@@ -1,7 +1,7 @@
 import { Playfair_Display } from 'next/font/google'
 import FormInput from "@/components/FormInput"
 import Botao from "@/components/Botao";
-
+import Link from "next/link";
 
 
 const playfair_display = Playfair_Display({
@@ -40,7 +40,9 @@ export default function Cadastro() {
           </div>
 
           <div className="border-green-600 border-2 p-2 w-[40%] h-[15%] flex flex-col items-center justify-center">
-            <Botao titulo="Cadastrar" cor="bg-[#FFA845]"/>
+            <Link href="/"> 
+              <Botao titulo="Cadastrar" cor="bg-[#FFA845]"/>
+            </Link>
           </div>
 
         </div>  

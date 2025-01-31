@@ -25,7 +25,7 @@ export default function Login(){
       {/*Fundo amarelo*/}
       <div className= " border-2 border-blue-500 w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#F9E9BF]"> 
         <div className="border-2 border-green-700 w-[100%] h-[10%]">
-          <Link href={"/page"} className="font-medium text-[#3176c5] underline">Voltar</Link>
+          <Link href={"/"} className="font-medium text-[#3176c5] underline">Voltar</Link>
         </div>
 
         {/*FLEXBOX DO MEIO*/}
