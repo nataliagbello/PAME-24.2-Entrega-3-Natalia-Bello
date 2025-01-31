@@ -1,5 +1,4 @@
 import { Playfair_Display } from 'next/font/google'
-import FormInput from "@/components/FormInput"
 import Botao from "@/components/Botao";
 import Link from "next/link";
 
@@ -207,18 +206,3 @@ export default function Servico() {
 
 
 
-{/*<div className={`border-2 border-black flex flex-row justify-start`}>
-                <h2 className={` text-center text-[#FFA845] ${playfair_display.className} w-[100%] font-medium text-lg`}>Hospedagem de pet:</h2>
-                
-              </div>
-
-              <div className={`border-2 border-black text-center flex flex-row justify-center`}>
-                <h2 className={` text-center text-[#FFA845] ${playfair_display.className} w-[100%] font-medium text-lg`}>Hospedagem de pet:</h2>
-                
-              </div>
-
-              <div className={`border-2 border-black text-center flex flex-row justify-center`}>
-                <h2 className={` text-center text-[#FFA845] ${playfair_display.className} w-[100%] font-medium text-lg`}>Hospedagem de pet:</h2>
-               
-              </div> */}
-  

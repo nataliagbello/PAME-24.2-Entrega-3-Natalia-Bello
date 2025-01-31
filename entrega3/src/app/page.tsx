@@ -41,13 +41,17 @@ export default function Inicio() {
         <div className="w-[100%] h-[80%] flex flex-row items-start justify-start">
           {/*SIDE BAR */}
           <div className="p-4 gap-6 bg-[#132C9A] flex flex-col justify-start items-center h-[100%] w-[15%]">
-            <div className="gap-6 bg-[#1837bf] rounded-xl w-[85%] flex flex-col justify-center items-center h-[30%]">
+            <div className="gap-6 bg-[#1837bf] rounded-xl w-[85%] flex flex-col justify-center items-center h-[35%]">
               <Link href="/login" >
                 <Botao titulo="Fazer login" style='w-[100%] h-[110%]' cor='bg-[#FFA845]'></Botao>
               </Link>
               
               <Link href="/cadastro">
                 <Botao titulo="Cadastre-se" style='w-[100%] h-[110%]' cor='bg-[#FFA845]'></Botao>
+              </Link>
+
+              <Link href="/perfil">
+                <Botao titulo="Acessar perfil" style='w-[100%] h-[110%]' cor='bg-[#FFA845]'></Botao>
               </Link>
               
             </div>
@@ -70,7 +74,7 @@ export default function Inicio() {
           </div>
 
           {/*FOTO FUNDO*/}
-          <div className="bg-full bg-[url(/cachorro.jpg)] flex flex-col items-end justify-end h-[100%] w-[85%]">
+          <div className="bg-[url(/cachorro.jpg)] bg-cover bg-no-repeat flex flex-col items-end justify-end h-[100%] w-[85%]">
             <div className="gap-8 w-[50%] h-[50%] flex flex-col justify-center items-center">
               <p className={`text-center text-white ${chewy.className} font-black text-5xl w-[70%] h-[40%] p-3`}>LUGAR DE DIVERSÃO E SEGURANÇA</p>
               <div className="w-[40%] h-[60%] items-start justify-center">
