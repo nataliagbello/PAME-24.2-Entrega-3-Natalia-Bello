@@ -23,19 +23,19 @@ export default function Login(){
     <body>
 
       {/*Fundo amarelo*/}
-      <div className= " border-2 border-blue-500 w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#F9E9BF]"> 
-        <div className="border-2 border-green-700 w-[100%] h-[10%]">
+      <div className= "w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#F9E9BF]"> 
+        <div className="w-[100%] h-[10%]">
           <Link href={"/"} className="font-medium text-[#3176c5] underline">Voltar</Link>
         </div>
 
         {/*FLEXBOX DO MEIO*/}
-        <div className="border-2 border-black flex flex-row w-[100%] h-[80%] items-center justify-center">
+        <div className="flex flex-row w-[100%] h-[80%] items-center justify-center">
           {/*PARTE DO HIDDEN*/}
           <div className="hidden lg:flex bg-[#2968B2] p-5 w-[40%] h-[90%] rounded-3xl items-center justify-center">
-            <div className= "bg-[#6593c7] border-2 border-black w-[88%] h-[88%] rounded-3xl flex flex-col justify-center ">
-              <h1 className={`border-2 border-black text-center text-[#FDBE77] ${playfair_display.className} font-black text-3xl h-[20%] p-3`}>Seja bem-vindo ao</h1>
-              <div className="border-2 border-green-900  flex flex-col justify-center items-center">
-                <Image src='/logotipo.jpg' width={350} height={350} alt={"LOGO DO HOTEL"} ></Image> {/*Inserir logo Hotel*/}
+            <div className= "bg-[#6593c7] w-[88%] h-[88%] rounded-3xl flex flex-col justify-center ">
+              <h1 className={`text-center text-[#FDBE77] ${playfair_display.className} font-black text-3xl h-[15%] p-3`}>Seja bem-vindo ao</h1>
+              <div className="flex flex-col justify-center items-center">
+                <Image src='/logotipo.jpg' width={330} height={330} alt={"LOGO DO HOTEL"} ></Image> {/*Inserir logo Hotel*/}
               </div>
             
             </div>
@@ -45,16 +45,18 @@ export default function Login(){
           {/*PARTE DO APARENTE*/}
           <div className= "p-5 w-[80%] h-[90%] lg:w-[40%] bg-[#F8EB78] rounded-3xl flex items-center justify-center">
           
-            <div className= "border-2 border-blue-700 w-[90%] sm:w-[70%] h-[90%] flex flex-col justify-center">
-              <h1 className={`border-2 border-black text-center text-[#2968B2]  ${playfair_display.className} font-black text-3xl`}>Login</h1>
-              <form className="border-2 p-6 border-black flex flex-col  gap-6">
+            <div className= "w-[90%] sm:w-[70%] h-[90%] flex flex-col justify-center">
+              <h1 className={`text-center text-[#2968B2]  ${playfair_display.className} font-black text-3xl`}>Login</h1>
+              <form className="p-6 flex flex-col  gap-6">
 
                 <FormInput label="Digite seu email:" placeholder="Email" cor='[#2968B2]'/>
                 <div>
                   <FormInput label="Senha" placeholder="Senha" tipo="password" cor='[#2968B2]'/>
                 </div>
               
-                <Botao titulo="Entrar" cor="bg-[#FFA845]"/>
+                <Link href="/"> 
+                  <Botao titulo="Entrar" cor="bg-[#FFA845]"/>
+                </Link>
 
                 <div className="text-[#2968B2] flex flex-col font-medium items-center justify-center">
                   <p>Não tem uma conta?</p>
@@ -66,8 +68,7 @@ export default function Login(){
           </div>
         </div>
 
-        <div className="border-2 border-green-700 w-[100%] h-[10%]">
-          <p>OLA</p>
+        <div className="w-[100%] h-[10%]">
         </div>
 
       </div>
@@ -77,5 +78,4 @@ export default function Login(){
 
 
 
-//<input type={tipo} className={`w-[100%] font-serif placeholder-text-2xl p-2 rounded-3xl`} placeholder={placeholder}/>
 
